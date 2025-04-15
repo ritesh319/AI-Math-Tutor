@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Math Solver Result</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+        body {
+        margin: 20px;
+        padding: 20px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background: linear-gradient(to bottom right, #3b0a85, #e54b8d);
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        }
+
+        .container {
+        background-color: #ffffff;
+        padding: 40px;
+        border-radius: 12px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        width: 90%;
+        max-width: 800px;
+        animation: fadeIn 0.5s ease-in-out;
+        }
+
+        h2 {
+            font-size: 26px;
+            font-weight: 600;
+            color: #005dba;
+            margin-bottom: 25px;
+        }
+
+        p {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+
+        a {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 12px 26px;
+            font-size: 16px;
+            font-weight: 500;
+            background: #4a90e2;
+            color: white;
+            border: none;
+            border-radius: 12px;
+            text-decoration: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        a:hover {
+            background-color: #3a78c2;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        h1 {
+        text-align: center;
+        color: #17a2b8;
+        margin-bottom: 25px;
+        font-size: 22px;
+        }
+
+        .loading-overlay {
+            position: fixed;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            background-color: rgba(255, 255, 255, 0.6);
+            display: none;
+            align-items: center;
+            justify-content: center;
+            z-index: 999;
+            font-size: 24px;
+            color: #2c3e50;
+        }
+    </style>
+
+    <!-- MathJax for LaTeX rendering -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async
+            src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>Math Problem Output</h1>
+
+        {% if expression %}
+        <p><strong>Expression:</strong></p>
+        <p>$$ {{ expression | safe }} $$</p>
+        {% endif %}
+
+        <p><strong>Solution:</strong></p>
+        <div>
+            {{ solution | replace('\n', '<br>') | safe }}
+        </div>
+
+        <a href="/">Try Another</a>
+    </div>
+
+    <div class="loading-overlay" id="loading">Loading...</div>
+
+    <script>
+        const forms = document.querySelectorAll('form');
+        const loading = document.getElementById('loading');
+        forms.forEach(form => {
+            form.addEventListener('submit', () => {
+                loading.style.display = 'flex';
+            });
+        });
+    </script>
+</body>
+</html>

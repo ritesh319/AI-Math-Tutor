@@ -1,0 +1,8 @@
+flask
+pix2tex
+Pillow
+openai-whisper
+sympy
+groq
+pytesseract
+gunicorn
