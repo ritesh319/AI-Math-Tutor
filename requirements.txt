@@ -6,3 +6,4 @@ sympy
 groq
 pytesseract
 gunicorn
+python-dotenv
