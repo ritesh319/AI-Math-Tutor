@@ -33,7 +33,7 @@ If it is NOT a mathematical problem or question, respond ONLY with the refusal p
     try:
         logging.info(f"Sending request to Groq for input: {expression[:50]}...")
         response = client.chat.completions.create(
-            model="llama3-8b-8192",
+            model="llama-3.3-70b-versatile",
             messages=[
                 {"role": "system", "content": system_content},
                 {"role": "user", "content": user_content}
