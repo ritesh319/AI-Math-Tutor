@@ -100,6 +100,6 @@ def not_found(e):
 def server_error(e):
     return jsonify({"error": "Internal server error"}), 500
 
+# its commented out for deployment. If u want to run locally on your system, remove the comments and use it.
 # if __name__ == '__main__':
-#     port = int(os.environ.get('PORT', 5000))  # Use Render's PORT or default to 5000
-#     app.run(debug=False, host='0.0.0.0', port=port)
+#     app.run(debug=True, host='0.0.0.0', port=5000)
