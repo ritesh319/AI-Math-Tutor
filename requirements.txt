@@ -7,5 +7,5 @@ groq
 pytesseract
 gunicorn
 python-dotenv
-albumentations
-pydanti
+albumentations==1.4.3
+pydantic<2.0
