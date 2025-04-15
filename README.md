@@ -52,5 +52,3 @@ See [LICENSE](LICENSE) for details.
 Pull requests and suggestions are welcome!  
 Open an issue or submit a PR.
 
----
-
