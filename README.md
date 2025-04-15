@@ -23,3 +23,34 @@ Built with Flask, integrates advanced OCR and speech-to-text, and uses LLMs for 
 - **LLM Solver:** Groq API
 - **Frontend:** HTML, CSS, JavaScript, MathJax
 
+---
+
+## 📦 Installation
+
+### 1. Clone the repository
+
+### 2. Set up a virtual environment
+
+### 3. Install dependencies
+
+### 4. (Optional) Set up environment variables:
+If you use API keys (e.g., for Groq), create a `.env` file and put the API key there (e.g, GROQ_API_KEY=api_key)
+
+### 5. Run the app locally
+
+---
+
+## 📝 License
+
+MIT License.  
+See [LICENSE](LICENSE) for details.
+
+---
+
+## 💡 Contributing
+
+Pull requests and suggestions are welcome!  
+Open an issue or submit a PR.
+
+---
+
