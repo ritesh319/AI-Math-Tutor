@@ -1,6 +1,6 @@
 ![github-submission-banner](https://github.com/user-attachments/assets/a1493b84-e4e2-456e-a791-ce35ee2bcf2f)
 
-# 🚀 AI Math Tutor
+# 🚀 Axiom
 
 > An AI-powered web app that solves math problems from text, images, or audio using Flask, OCR, speech-to-text, and language models. Designed to assist students and learners in understanding math step-by-step.
 
@@ -66,10 +66,10 @@ Highlight the most important features of your project:
 - ✅ Speech recognition for hands-free input
 - ✅ OCR for handwritten/printed math problems
 
-![Screenshot 2025-04-18 182820](https://github.com/user-attachments/assets/de34994e-9aa2-4135-9aaf-d95d83610dd2)
-![Screenshot 2025-04-18 182853](https://github.com/user-attachments/assets/0e7a1569-2c41-462f-a4cd-1b8714a049eb)
-![Screenshot 2025-04-18 182934](https://github.com/user-attachments/assets/885846ee-dcef-4ce4-9edd-9e9500e7a792)
-![Screenshot 2025-04-18 190435](https://github.com/user-attachments/assets/ee99c134-ff1a-4bb3-9c7a-12b2ebe4196e)
+![Screenshot 2025-04-18 221734](https://github.com/user-attachments/assets/cca84c0a-d482-475b-95de-58c48c7dec01)
+![Screenshot 2025-04-18 221755](https://github.com/user-attachments/assets/71ec8667-9ca3-4099-bdf8-366b4e8e706f)
+![Screenshot 2025-04-18 221819](https://github.com/user-attachments/assets/2bbfa256-9ecc-4358-b000-5e1ab9bc5c0e)
+![Screenshot 2025-04-18 221819](https://github.com/user-attachments/assets/7fcdc38b-208c-4ee5-a8e2-587330f495a1)
 
 ---
 
