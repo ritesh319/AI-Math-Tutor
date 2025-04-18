@@ -6,6 +6,7 @@ sympy
 groq
 pytesseract
 gunicorn
+ffmpeg
 python-dotenv
 albumentations==1.4.3
 pydantic<2.0
