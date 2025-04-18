@@ -66,9 +66,10 @@ Highlight the most important features of your project:
 - ✅ Speech recognition for hands-free input
 - ✅ OCR for handwritten/printed math problems
 
-![Screenshot 2025-04-18 190435](https://github.com/user-attachments/assets/3429b76a-26a6-458e-ac9b-f8a18b7bbd75)
-![Screenshot 2025-04-18 182934](https://github.com/user-attachments/assets/54cff155-605e-4c0f-97aa-6ec283847efd)
-![Screenshot 2025-04-18 182853](https://github.com/user-attachments/assets/92034473-33ea-464b-b6fa-4f2e361a01a5)
+![Screenshot 2025-04-18 182820](https://github.com/user-attachments/assets/de34994e-9aa2-4135-9aaf-d95d83610dd2)
+![Screenshot 2025-04-18 182853](https://github.com/user-attachments/assets/0e7a1569-2c41-462f-a4cd-1b8714a049eb)
+![Screenshot 2025-04-18 182934](https://github.com/user-attachments/assets/885846ee-dcef-4ce4-9edd-9e9500e7a792)
+![Screenshot 2025-04-18 190435](https://github.com/user-attachments/assets/ee99c134-ff1a-4bb3-9c7a-12b2ebe4196e)
 
 ---
 
