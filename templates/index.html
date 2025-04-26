@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Axiom</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+    <script>
+      window.MathJax = {
+        tex: {
+          inlineMath: [
+              ['$', '$'],
+              ['\\(', '\\)']
+          ],
+          displayMath: [
+              ['$$', '$$'],
+              ['\\[', '\\]']
+          ],
+          processEscapes: true
+        },
+        svg: {
+          fontCache: 'global'
+        },
+        startup: {
+          ready: () => {
+            console.log('MathJax is ready');
+            MathJax.startup.defaultReady();
+          }
+        }
+      };
+    </script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+
+    <script src='https://cdn.plot.ly/plotly-2.32.0.min.js'></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/12.4.1/math.min.js"></script>
+
+
+</head>
+<body>
+    <div class="chat-container">
+        <div class="header-bar">
+            <h1>Axiom</h1>
+        </div>
+
+        <div class="chat-messages" id="chatMessages">
+
+             <div class="message ai">
+                <div class="avatar"><i class="fas fa-robot"></i></div>
+                <div class="message-content">
+                    <div class="username">Math Helper AI</div>
+                    <div class="text">Hey there, math explorer! 🔍 Ready to tackle some numbers? Type your question, snap a pic, or just say it out loud — I'm here to help you figure it out!</div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="input-area">
+            <input type="file" id="imageUpload" accept="image/*" hidden/>
+            <button id="imageUploadBtn" title="Upload Image"><i class="fas fa-image"></i></button>
+            <select id="imageTypeSelect" title="Select image content type">
+                <option value="expression" selected>Math Equation</option>
+                <option value="word_problem">Word Problem</option>
+            </select>
+            <button id="startRecordBtn" title="Start Recording"><i class="fas fa-microphone"></i></button>
+            <button id="stopRecordBtn" title="Stop Recording" disabled><i class="fas fa-stop-circle"></i></button>
+            <textarea id="textInput" rows="1" placeholder="Type your math problem..."></textarea>
+            <button id="sendBtn" title="Send Message"><i class="fas fa-paper-plane"></i></button>
+        </div>
+    </div>
+
+    <div id="fullscreen-overlay">
+      <button id="close-fullscreen-btn" class="close-fullscreen-btn" title="Close (Esc)">×</button>
+      <div id="fullscreen-graph-container">
+          <!-- Plotly graph will be rendered here -->
+      </div>
+  </div>
+
+    <script defer src="{{ url_for('static', filename='js/script.js') }}"></script>
+
+</body>
+</html>
