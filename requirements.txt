@@ -1,0 +1,12 @@
+flask
+pix2tex
+Pillow
+openai-whisper
+sympy
+groq
+pytesseract
+python-dotenv
+gunicorn
+ffmpeg
+albumentations==1.4.3
+pydantic<2.0
