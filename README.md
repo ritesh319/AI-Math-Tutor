@@ -119,6 +119,7 @@ pip install -r requirements.txt
 # Run the app
 python app.py
 
+# also make sure that after installing tesseract, add the path of tesseract in pt.py
 ```
 
 Provide any backend/frontend split or environment setup notes here.
